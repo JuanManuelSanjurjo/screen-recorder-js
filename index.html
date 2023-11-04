@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Syncopate&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <title>Screen recorder</title>
+</head>
+<body id="top">
+    
+    <header class="headerContainer">
+        <h1 >
+            Screen Recorder
+        </h1>
+    </header>
+
+    <main>
+        <div class="feedbackVideoContainer" > 
+            <h2 class="recorderHeader">Video Recorder <div class="rec">REC <span>&#9679</span></div></h2>
+            
+            <video  class="feedbackVideo" src="" autoplay ></video>
+
+            <div class="buttonContainer">
+                <button class="startBtn">Start recording</button>
+                <button class="stopBtn" disabled>Stop recording</button>
+            </div>
+        </div>
+        <div class="recordedVideoContainer" > 
+            <h2>Output Video</h2>
+            <video  class="recordedVideo" src="" controls></video>
+
+            <div class="buttonContainer">
+                 <a href="" class="downloadBtn" disabled>Download video</a>
+            </div>
+        </div>
+
+        <a class="topButton" href="#top">UP</a>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --color1: #0B2447;
+    --color2: #19376D;
+    --color3: #576CBC;
+    --color4: #A5D7E8;
+    --black: #07111f; 
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color2);
+    color: var(--color4);
+}
+
+.headerContainer{
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color1);
+    text-transform: uppercase;
+    box-shadow:  0px 0px 5px var(--color1);
+
+}
+main{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px;
+    overflow: auto;
+    margin-top: 20px;
+    padding-bottom: 100px;
+}
+h2{
+    font-size: 1.25rem;
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.feedbackVideoContainer, .recordedVideoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+}
+video{
+    flex: 1;
+    background-color: var(--black);
+    width: 100%;
+    height: auto;
+}
+.buttonContainer{
+    display: flex;
+    width: 100%;    gap: 10px;
+    margin-block: 10px; 
+}
+button, div a{
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background: linear-gradient(to bottom right, var(--color3), var(--color1));
+    color: var(--color4);
+    text-decoration: none;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    box-shadow:  2px 2px 2px var(--color1);
+    padding: 15px;
+    transition: 0.2s;
+}
+button:hover, a:hover{
+    opacity: 0.8;
+    outline: 1px solid var(--color4);
+    box-shadow:  0px 0px 10px var(--color4);
+
+}
+.topButton{
+    position: absolute;
+    text-decoration: none;
+    background-color: var(--color1);
+    color: var(--color4);
+    font-size: 1.125rem;
+    padding: 25px;
+    border-radius: 50px;
+    right: 20px;
+    bottom : 20px    
+}
+.recordedVideoContainer{
+    visibility: hidden;
+}
+.recorderHeader{
+    width: 100%;
+    justify-content: center;
+    display:flex; 
+    align-items: center; 
+    line-height: 1rem;
+}
+
+.rec{
+    position: absolute;
+    background-color: transparent;
+    color: red;
+    right: 18%;
+    font-size: 1.5rem;
+    font-weight: 800;
+    animation: recording 2s infinite;
+    visibility: hidden;
+}
+
+.rec span {
+    font-size: 2rem;
+}
+@keyframes recording {
+    0% {
+        text-shadow: 0px 0px 0px rgb(161, 5, 5);
+    }
+    50% {
+        text-shadow: 0px 0px 20px  rgb(161, 5, 5);
+    }
+    100% {
+        text-shadow: 0px 0px 0px  rgb(161, 5, 5);
+    }
+}
+
+/* 
+@media screen and (max-width: 1000px){
+    main{
+        flex-direction: column;
+        align-items:center;
+        margin-top: 25px;
+       }
+
+} */
