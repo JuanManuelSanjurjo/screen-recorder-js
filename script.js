@@ -10,6 +10,12 @@ let stream = null,
     recordedVideo = null;
 
 
+console.log(navigator.languages)
+
+navigator.geolocation.getCurrentPosition(position => {
+    console.log(position);
+  });
+
 async function setUpStream(){
     try{
         stream = await navigator.mediaDevices.getDisplayMedia({
