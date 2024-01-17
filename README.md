@@ -1,6 +1,6 @@
 ## Web Screen Recorder
 
-[Screen Recorder](https://juanmanuelsanjurjo.github.io/screen-recorder-js/)
+## [Screen Recorder Live Page](https://juanmanuelsanjurjo.github.io/screen-recorder-js/)
 
 This project is a screen recording tool that captures the user's screen, browser sound, and microphone audio. After the recording is finished, the application transports the user to a video preview. From here, the user has the option to download the recorded video before replacing it with another recording.
 
